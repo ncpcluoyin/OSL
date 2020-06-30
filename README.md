@@ -15,4 +15,11 @@
 
 #### 使用说明
 
-1.  在终端执行startosl命令即可开启
+在终端执行startosl命令即可开启
+
+#### 故障处理
+
+1.  mount出现错误
+root权限使用umount /opt/osl/disk.img即可
+2.  权限不够
+使用root权限执行
