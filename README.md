@@ -23,3 +23,6 @@
 root权限使用umount /opt/osl/disk.img即可
 2.  权限不够
 使用root权限执行
+
+#### 更新日志
+详见log文件
