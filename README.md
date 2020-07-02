@@ -29,4 +29,4 @@ root权限使用umount /opt/osl/disk.img即可
 
 #### 历史版本
 在master分支中的bin文件夹中的始终为最新版
-如要获得某个版本，可在标签中，也就是https://gitee.com/ncpc_luoyin/OSL/tags中下载
+如要获得某个版本，可在标签中，也就是https://gitee.com/ncpc_luoyin/OSL/tags 中下载
