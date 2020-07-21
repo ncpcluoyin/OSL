@@ -33,6 +33,7 @@ if a=="y":
     print("OK")
     print("Installing OSL launcher")
     os.system("ln -s /opt/osl/startosl /usr/bin/startosl")
+    os.system("apt install arch-install-scripts -y")
     print("OK!Install complete!")
 else:
     exit()
