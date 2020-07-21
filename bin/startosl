@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import os
 os.system("mount /opt/osl/disk.img /opt/osl/tmp/")
-os.system("chroot /opt/osl/tmp/")
+os.system("arch-chroot /opt/osl/tmp/")
 os.system("umount /opt/osl/disk.img")
 exit()
