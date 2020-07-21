@@ -4,8 +4,7 @@
 基于archlinux制作的在linux上的linux子系统
 
 #### 软件架构
-本软件基于amd64架构，在linux系统上运行，windows、macos、32位linux系统和arm架构的系统无法使用哦
-开发日志注：已增添其他发行版支持（详见log文件）
+本软件基于amd64架构，在debian系列linux系统上运行，redhat linux、windows、macos、32位linux系统和arm架构的系统无法使用哦
 
 #### 安装教程
 
