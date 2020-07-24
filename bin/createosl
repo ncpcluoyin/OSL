@@ -1,0 +1,17 @@
+#!/bin/python3
+import os
+name = input("What the name of the OSL?")
+b = input("How much space?")
+print("Creating..it will take a few time")
+os.system("dd if=/dev/zero of=/opt/osl/" + name + ".img bs=1M count=" + b + " status=progress")
+os.system("mkfs.ext4 /opt/osl/" + name + ".img")
+os.system("mount /opt/osl/" + name + ".img /opt/osl/tmp")
+os.system("cp /opt/osl/arch/arch.tar.gz* /opt/osl/tmp/")
+os.chdir("/opt/osl/tmp")
+os.system("cat arch.tar.gz* | tar -zxv")
+os.system("rm -rf arch.tar.gz.*")
+os.system("tar -zxvf arch.tar.gz")
+os.chdir("..")
+os.system("umount tmp")
+print("OK!")
+exit()
