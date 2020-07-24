@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 import os
 name = input("What the name of the OSL:")
 b = input("How much space(mb):")
