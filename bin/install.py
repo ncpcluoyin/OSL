@@ -10,8 +10,10 @@ if a=="y":
     os.system("cp ./arch.tar.gz* /opt/osl/arch/")
     os.system("cp ./startosl /opt/osl/")
     os.system("cp ./createosl /opt/osl")
+    os.system("cp ./delosl /opt/osl")
     os.system("chmod 777 /opt/osl/startosl")
     os.system("chmod 777 /opt/osl/createoslosl")
+    os.system("chmod 777 /opt/osl/delosl")
     print("OK")
     b = input("How much space do you want to allocate to OSL? (mb)")
     name = input("What the name of the OSL?")
@@ -39,6 +41,7 @@ if a=="y":
     print("Installing OSL launcher")
     os.system("ln -s /opt/osl/startosl /usr/bin/startosl")
     os.system("ln -s /opt/osl/createosl /usr/bin/createosl")
+    os.system("ln -s /opt/osl/delosl /usr/bin/delosl")
     os.system("apt install arch-install-scripts -y")
     print("OK!Install complete!")
 else:
