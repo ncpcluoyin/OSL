@@ -14,7 +14,7 @@ if a=="y":
     print("Creating mirror")
     os.chdir("/opt/osl/")
     os.system("dd if=/dev/zero of=./" + name + ".img bs=1M count=" + b + " status=progress")
-    os.system("mkfs.ext4 ./disk.img")
+    os.system("mkfs.ext4 ./" + name + ".img")
     print("OK")
     print("Mounting image")
     os.system("mount ./" + name + ".img /opt/osl/tmp/")
