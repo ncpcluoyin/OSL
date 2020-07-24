@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
-os.system("mount /opt/osl/disk.img /opt/osl/tmp/")
+a = input("OSL name:")
+os.system("mount /opt/osl/" + a +".img /opt/osl/tmp/")
 os.system("arch-chroot /opt/osl/tmp/")
-os.system("umount /opt/osl/disk.img")
+os.system("umount /opt/osl/tmp")
 exit()
