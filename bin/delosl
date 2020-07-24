@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+import os
+a = input("OSL name:")
+os.system("rm -rf /opt/osl/" + a + ".img")
+print(a + " has already delete")
