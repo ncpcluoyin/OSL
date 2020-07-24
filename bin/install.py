@@ -12,7 +12,7 @@ if a=="y":
     os.system("cp ./createosl /opt/osl")
     os.system("cp ./delosl /opt/osl")
     os.system("chmod 777 /opt/osl/startosl")
-    os.system("chmod 777 /opt/osl/createoslosl")
+    os.system("chmod 777 /opt/osl/createosl")
     os.system("chmod 777 /opt/osl/delosl")
     print("OK")
     b = input("How much space do you want to allocate to OSL? (mb)")
