@@ -1,7 +1,7 @@
 #!/bin/python3
 import os
-name = input("What the name of the OSL?")
-b = input("How much space?")
+name = input("What the name of the OSL:")
+b = input("How much space:")
 print("Creating..it will take a few time")
 os.system("dd if=/dev/zero of=/opt/osl/" + name + ".img bs=1M count=" + b + " status=progress")
 os.system("mkfs.ext4 /opt/osl/" + name + ".img")
