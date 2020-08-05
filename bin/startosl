@@ -2,6 +2,6 @@
 import os
 a = input("OSL name:")
 os.system("mount /opt/osl/" + a +".img /opt/osl/tmp/")
-os.system("arch-chroot /opt/osl/tmp/")
+os.system("arch-chroot /opt/osl/tmp/ /etc/upstart/start.sh")
 os.system("umount /opt/osl/tmp")
 exit()
