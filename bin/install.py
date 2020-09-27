@@ -17,7 +17,7 @@ if a=="y":
     print("OK")
     b = input("How much space do you want to allocate to OSL? (mb)")
     name = input("What the name of the OSL?")
-    print("Creating mirror")
+    print("Creating image")
     os.chdir("/opt/osl/")
     os.system("dd if=/dev/zero of=./" + name + ".img bs=1M count=" + b + " status=progress")
     os.system("mkfs.ext4 ./" + name + ".img")
