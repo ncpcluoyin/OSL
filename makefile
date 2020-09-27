@@ -4,3 +4,5 @@ uninstall:
 	sudo python3 bin/uninstall.py
 link:
 	sudo python3 package/link.py
+construct:
+	sudo python3 package/construct.py

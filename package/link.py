@@ -1,4 +1,3 @@
-import os
 print("link to the git repository?")
 a = input("(y/n)")
 if a!="y":
